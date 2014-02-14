@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#33B5E5">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="MainActivity 1"
+            android:textSize="22dp"
+            android:textColor="@android:color/black"/>
+
+    <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="600dp"
+            android:layout_height="fill_parent"
+            android:background="#33B5E5">
+
+        <LinearLayout
+                android:id="@+id/button_linear"
+                android:orientation="vertical"
+                android:layout_width="122dp"
+                android:layout_height="fill_parent"
+                android:background="#33B5E5"
+                >
+            <Button
+                    android:id="@+id/startint_button"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Start InternService"
+                    />
+            <Button
+                    android:id="@+id/stopint_button"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Stop InternService"
+                    />
+            <Button
+                    android:id="@+id/startext_button"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Start ExternService"
+                    />
+            <Button
+                    android:id="@+id/stopext_button"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Stop ExternService"
+                    />
+            <Button
+                    android:id="@+id/aux_activity1"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Go to AuxActivity1"
+                    />
+            <Button
+                    android:id="@+id/main_activity2"
+                    android:layout_width="120dp"
+                    android:layout_height="60dp"
+                    android:text="Go to MainActivity2"
+                    />
+        </LinearLayout>
+        <TextView
+                android:id="@+id/content_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/button_linear"
+                android:maxLines="100"
+                android:background="#33B5E5"
+                android:scrollbars="vertical"
+                android:gravity="left"
+                android:textSize="12dp"
+                android:textColor="@android:color/black"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                />
+    </RelativeLayout>
+</LinearLayout>
+
